@@ -21,5 +21,7 @@ services:
       test: pg_isready -d $${POSTGRES_DB} -U postgres
       interval: 2s
       retries: 10
+    ports:
+      - "5432:5432"
 volumes:
   postgres_data:

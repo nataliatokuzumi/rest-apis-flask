@@ -12,7 +12,7 @@ from blocklist import BLOCKLIST
 from flask_migrate import Migrate
 from dotenv import load_dotenv
 
-def create_app(db_url="postgresql://postgres:password@localhost:5432/myapp"):
+def create_app(db_url="postgresql://postgres:password@db:5432/myapp"):
 
     app = Flask(__name__)
     load_dotenv()
